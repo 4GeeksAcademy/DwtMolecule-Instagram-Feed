@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/8d537799a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid justify-content">
+         <div class="d-flex"> <i class="fa-brands fa-instagram"></i>
+          <a class="navbar-brand">Instagram</a>
+         </div>
+          <form class="d-flex">
+            <div class="container">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create new post
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create new post.</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Caption 
+                      <ul class="list-group">
+                        <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+                      </ul>
+                      <i class="fa-solid fa-location-dot mx-2 my-2"></i>
+                      <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary btn btn-success">Publish</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+         </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><a class="dropdown-item" href="#">Accesibilyti</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </nav>
+      <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-expand"></i></button>
+        </li>
+       
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <div class="row">
+            <div class="col-lg-4"><img src="https://picsum.photos/355?random=1"class="m-2 w-100" alt=""></div>
+            <div class="col-lg-4"><img src="https://picsum.photos/355?random=2"class="m-2 w-100" alt=""></div>
+            <div class="col-lg-4"><img src="https://picsum.photos/355?random=3"class="m-2 w-100" alt=""></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4"><img src="https://picsum.photos/355?random=4"class="m-2 w-100" alt=""></div>
+            <div class="col-lg-4"><img src="https://picsum.photos/355?=5"class="m-2 w-100" alt=""></div>
+            <div class="col-lg-4"><img src="https://picsum.photos/355?=6" class="m-2 w-100"alt="" ></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4"><img src="https://picsum.photos/355?=7"class="m-2 w-100" alt=""></div>
+            <div class="col-lg-4"><img src="https://picsum.photos/355?=8"class="m-2 w-100" alt=""></div>
+            <div class="col-lg-4"><img src="https://picsum.photos/355?=9"class="m-2 w-100" alt=""></div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="post">
+            <div class="post-header d-flex justify-content-between">
+              <p><b>Mi perro loco Spark</b></p>
+              <span>04/23</span>
+            </div>
+            <div class="post-image">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ1wN_pLOL55b_Ud-CgpWRURTLaBUMvirDxw&s" alt="100%" width="100%">
+            </div>
+            <div class="post-description">
+              <p><b>1655 Likes</b></p>
+              <p>Este es mi pequeño y desordenado perrito llamado Spark! de raza labrador y es muy tierno, con dos meses de vida aspira a ser de gran tamaño.</p>
+            </div>
+        </div>
+          </span>
+    
+        <div class="post">
+          <div class="post-header d-flex justify-content-between">
+            <p><b>La INCREIBLE chilena de Cristiano ante Juventus</b></p>
+            <span>08/17</span>
+          </div>
+          <div class="post-image">
+             <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2018/04/03/15227917661173.jpg" alt="" width="100%">
+          </div>
+          <div class="post-description">
+            <p><b> 23,468 Likes</b></p>
+            <p>Esta pirueta que ha dado la vuelta al mundo. Cristiano Ronaldo a dejado una increible postal para la historia con esta chilena que quedara en el recuerdo de todos los madridences.</p>
+          </div>
+      </div> 
+        </div>
+      
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+</body>
+</html>
